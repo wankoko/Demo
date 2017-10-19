@@ -115,8 +115,8 @@
 
     <!--android:visibility="gone"-->
 
-    <TextView
-        android:id="@+id/Login_TextView_Send"
+    <Button
+        android:id="@+id/Login_button"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="登陆"
