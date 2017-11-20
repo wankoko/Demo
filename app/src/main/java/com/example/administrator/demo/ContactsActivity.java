@@ -1,9 +1,12 @@
 package com.example.administrator.demo;
 
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 /**
  * Created by Administrator on 2017/11/13.
@@ -19,5 +22,6 @@ public class ContactsActivity extends AppCompatActivity{
                 ContactsActivity.this,android.R.layout.simple_list_item_1,data);
         ListView listView=(ListView)findViewById(R.id.list_view);
         listView.setAdapter(adapter);
+
     }
 }
