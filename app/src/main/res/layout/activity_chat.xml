@@ -3,40 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:background="#d8e0e8">
 
-    <LinearLayout
-        android:id="@+id/left_layout"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:layout_gravity="left"
-        android:background="@drawable/chat2">
 
-        <TextView
-            android:id="@+id/left_msg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:textColor="#fff"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/right_layout"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:layout_gravity="right"
-        android:background="@drawable/chat1">
-
-        <TextView
-            android:id="@+id/right_msg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"/>
-
-    </LinearLayout>
+    <android.support.v7.widget.RecycerView
+        android:id="@+id/msg_recycler_view"
+        android:weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -46,16 +21,19 @@
             android:id="@+id/input_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="输入你想说的话"
-            android:maxLines="2" />
+            android:hint="Type something here"
+            android:maxLines="2"
+            android:weight="1" />
 
-        <Button
-            android:id="@+id/send"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="发送" />
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Button" />
+
 
 </LinearLayout>
